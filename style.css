@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  background: #f4f7ff;
+  font-family: poppins;
+  display: grid;
+  justify-content: center;
+}
+h1 {
+  font-size: 82px;
+  color: #3ec32f;
+  text-align: center;
+  margin: 0px;
+  margin-top: 160px;
+}
+span {
+  color: #2f4fb9;
+}
+
+img {
+  width: 30px;
+  border: 0.5px solid black;
+}
+
+input {
+  font-size: 1rem;
+  padding: 5px;
+  width: 300px;
+}
+.container {
+  display: grid;
+  place-items: center;
+  gap: 22px;
+  background: white;
+  padding: 100px;
+  border: 1px solid #7892c2;
+}
+
+.container-itens {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.sessao {
+  text-decoration: none;
+  color: #ffffff;
+  background: #3ec32f;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+}
+.senha {
+  color: #2f4fb9;
+  text-decoration: none;
+}

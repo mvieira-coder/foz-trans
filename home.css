@@ -1,0 +1,89 @@
+* {
+  font-family: poppins;
+  margin: 0;
+}
+body {
+  background-color: #f0f2f5; /* Tom de fundo mais suave */
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0px;
+  margin-top: 20px;
+  color: #666666;
+}
+.bem-vindo p {
+  font-size: 14px;
+  color: #575757;
+}
+.saida {
+  max-width: 30px;
+  position: absolute;
+}
+
+.bem-vindo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; /* Bordas arredondadas para formar um círculo */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-container {
+  background: #ffffff;
+  min-height: 30vh;
+  width: 280px;
+  padding: 10px 10px 36px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 50px 50px 0;
+  gap: 40px;
+}
+
+.home-container a {
+  text-align: center;
+  background: #03aa35;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 11px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+a:hover {
+  background: #029b30;
+}
+
+.bem-vindo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #0b54b4;
+  color: #fff;
+  padding: 20px;
+  padding-right: 80px;
+  text-align: center;
+  height: 13.4vh;
+  font-size: 13px;
+}
+
+.email {
+  grid-column: 3;
+}
+.espaco {
+  display: flex;
+  background: red;
+}

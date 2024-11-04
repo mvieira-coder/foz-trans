@@ -31,7 +31,7 @@ h1 {
 
 .home-container {
   background: #ffffff;
-  min-height: 30vh;
+  min-height: 35vh;
   width: 280px;
   padding: 10px 10px 36px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -76,7 +76,7 @@ footer {
   padding: 20px;
   padding-right: 80px;
   text-align: center;
-  height: 13.4vh;
+  height: 17.4vh;
   font-size: 13px;
 }
 

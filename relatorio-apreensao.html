@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    // Função fictícia para gerar relatório mensal em Excel
+    function gerarRelatorioExcel() {
+      alert("Relatório mensal gerado com sucesso em formato Excel! (Funcionalidade em desenvolvimento)");
+    }
+  </script>
+</head>
+
+<body style="background-color: #f5f5f5; margin: 0; padding: 0; font-family: 'Poppins', sans-serif;">
+
+  <!-- Header -->
+  <header style="background-color: white; padding: 10px 20px; display: flex; align-items: center;">
+    <a href="javascript:history.back()" style="text-decoration: none;">
+      <h1 style="font-size: 24px; margin: 0; font-family: 'Poppins', sans-serif; color: black;">
+        <span style="color: green;">Foz</span><span style="color: blue;">Trans</span>
+      </h1>
+    </a>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main style="margin: 20px auto; max-width: 900px; background: white; padding: 20px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <h2 style="font-size: 20px; color: #007bff; margin-bottom: 20px;">Relatórios de Apreensões</h2>
+
+    <!-- Botão para gerar relatório mensal -->
+    <button onclick="gerarRelatorioExcel()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-bottom: 20px;">
+      Gerar Relatório Mensal (Excel)
+    </button>
+
+    <!-- Lista de Apreensões com Rolagem -->
+    <div style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; border-radius: 8px; padding: 10px;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
+        <thead>
+          <tr>
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Número do Processo</th>
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Placa</th>
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Data</th>
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Apreensões Fictícias -->
+          <tr>
+            <td style="padding: 10px;">PROC-123456</td>
+            <td style="padding: 10px;">ABC-1234</td>
+            <td style="padding: 10px;">2024-11-01</td>
+            <td style="padding: 10px; color: orange;">Pendente</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">PROC-123457</td>
+            <td style="padding: 10px;">DEF-5678</td>
+            <td style="padding: 10px;">2024-11-05</td>
+            <td style="padding: 10px; color: green;">Liberado</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">PROC-123458</td>
+            <td style="padding: 10px;">GHI-9101</td>
+            <td style="padding: 10px;">2024-11-07</td>
+            <td style="padding: 10px; color: red;">Em Pátio</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">PROC-123459</td>
+            <td style="padding: 10px;">JKL-1123</td>
+            <td style="padding: 10px;">2024-11-10</td>
+            <td style="padding: 10px; color: orange;">Pendente</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">PROC-123460</td>
+            <td style="padding: 10px;">MNO-1415</td>
+            <td style="padding: 10px;">2024-11-12</td>
+            <td style="padding: 10px; color: red;">Em Pátio</td>
+          </tr>
+          <!-- Adicione mais registros conforme necessário -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer style="text-align: center; padding: 10px; background-color: #007bff; color: white; margin-top: 20px;">
+    <p>Telefone: (45) 2105-9600</p>
+    <p>Desenvolvido por alunos do curso de Eng. Software / ADS</p>
+    <p>Endereço: Rua Edgard Schimmelpfeng, 43 - Centro Cívico, Foz do Iguaçu - PR, 85863-900</p>
+  </footer>
+
+  <style>
+    table th, table td {
+      border: 1px solid #ddd;
+    }
+
+    table th {
+      font-weight: bold;
+    }
+
+    table tr:nth-child(even) td {
+      background-color: #f9f9f9;
+    }
+
+    table tr:hover td {
+      background-color: #e9e9e9;
+    }
+  </style>
+
+</body>
+
+</html>

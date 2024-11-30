@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultar Apreensão</title>
+  <link rel="stylesheet" href="/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    // Função fictícia para busca
+    function buscarRegistro() {
+      const numeroProcesso = document.getElementById("pesquisa-registro").value;
+      if (numeroProcesso === "PROC-123456") {
+        alert("Registro encontrado!");
+        // Aqui pode ser implementada a lógica para preencher os dados dinamicamente.
+      } else {
+        alert("Registro não encontrado!");
+      }
+    }
+
+    // Função fictícia para encaminhar à base
+    function encaminharBase() {
+      alert("Dados encaminhados à base da Foz Trans com sucesso!");
+    }
+
+    // Função fictícia para gerar PDF
+    function gerarPDF() {
+      alert("Função de geração de PDF ainda não implementada.");
+    }
+  </script>
+</head>
+
+<body style="background-color: #f5f5f5; margin: 0; padding: 0; font-family: 'Poppins', sans-serif;">
+
+  <!-- Logo -->
+  <header style="background-color: white; padding: 10px 20px; display: flex; align-items: center;">
+    <a href="javascript:history.back()" style="text-decoration: none;">
+      <h1 style="font-size: 24px; margin: 0; font-family: 'Poppins', sans-serif; color: black;">
+        <span style="color: green;">Foz</span><span style="color: blue;">Trans</span>
+      </h1>
+    </a>
+  </header>
+
+  <main>
+    <!-- Barra de Pesquisa -->
+    <div style="margin: 20px auto; max-width: 800px; background: white; padding: 20px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+      <h2 style="font-size: 20px; color: #007bff; margin-bottom: 20px;">Consultar Apreensão</h2>
+      <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <input type="text" id="pesquisa-registro" placeholder="Digite o número do processo (ex: PROC-123456)" style="flex: 1; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+        <button onclick="buscarRegistro()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">Buscar</button>
+      </div>
+    </div>
+
+    <!-- Relatório -->
+    <div style="margin: 20px auto; padding: 20px; max-width: 800px; background: white; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+      <h2 style="margin-bottom: 20px; font-size: 20px; color: #007bff;">Relatório da Última Apreensão</h2>
+
+      <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">Número do Processo</th>
+          <td style="padding: 10px;">PROC-123456</td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">Nome</th>
+          <td style="padding: 10px;">João Silva</td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">CPF</th>
+          <td style="padding: 10px;">123.456.789-00</td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">RG</th>
+          <td style="padding: 10px;">12.345.678-9</td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">Telefone</th>
+          <td style="padding: 10px;">(45) 99999-9999</td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">Placa do Veículo</th>
+          <td style="padding: 10px;">ABC-1234</td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">Modelo do Veículo</th>
+          <td style="padding: 10px;">Ford Ka</td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">Motivo da Apreensão</th>
+          <td style="padding: 10px;">Estacionamento irregular</td>
+        </tr>
+        <tr>
+          <th style="text-align: left; padding: 10px; background-color: #f1f1f1;">Data</th>
+          <td style="padding: 10px;">2024-11-27</td>
+        </tr>
+      </table>
+
+      <!-- Botões -->
+      <div style="margin-top: 20px; display: flex; gap: 10px;">
+        <button onclick="encaminharBase()" style="flex: 1; background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">Encaminhar à Base</button>
+        <button onclick="gerarPDF()" style="flex: 1; background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">Gerar PDF</button>
+      </div>
+    </div>
+  </main>
+
+  <footer style="text-align: center; padding: 10px; background-color: #007bff; color: white;">
+    <p>Telefone: (45) 2105-9600</p>
+    <p>Desenvolvido por alunos do curso de Eng. Software / ADS</p>
+    <p>Endereço: Rua Edgard Schimmelpfeng, 43 - Centro Cívico, Foz do Iguaçu - PR, 85863-900</p>
+  </footer>
+
+  <style>
+    table th,
+    table td {
+      border: 1px solid #ddd;
+    }
+
+    table th {
+      font-weight: bold;
+    }
+
+    table tr:nth-child(even) td {
+      background-color: #f9f9f9;
+    }
+  </style>
+
+</body>
+
+</html>

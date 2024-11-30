@@ -71,11 +71,10 @@ a:hover {
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: #192535;
+  background: #0b54b4;
   color: #fff;
   padding: 20px;
   padding-right: 80px;
-
   text-align: center;
   height: 17.4vh;
   font-size: 13px;
